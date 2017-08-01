@@ -1,0 +1,17 @@
+md-card-content>:last-child, md-card>:last-child {
+  margin-bottom: 15px;
+}
+
+md-card-content>:first-child, md-card>:first-child {
+  margin-top: 15px;
+}
+
+md-card {
+  margin: 15px;
+}
+
+.tile-card {
+  width: 400px;
+  min-width: 350px;
+  height: 275px;
+}
