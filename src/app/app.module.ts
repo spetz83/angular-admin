@@ -9,13 +9,20 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { routes } from './app.route';
-import { AppComponent, DashboardComponent } from './components';
+import { AppComponent, DashboardComponent, CustomersComponent, AppsComponent, UsersComponent, AuthCodesComponent, OrdersComponent, PartsComponent } from './components';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent
+    DashboardComponent,
+    CustomersComponent,
+    AppsComponent,
+    UsersComponent,
+    AuthCodesComponent,
+    OrdersComponent,
+    PartsComponent
   ],
   imports: [
     BrowserModule,
