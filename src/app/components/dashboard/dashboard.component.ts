@@ -16,7 +16,7 @@ export class DashboardComponent implements OnInit {
     const appsTile: Tile = new Tile('Apps', 'Manage Apps', 'apps');
     const usersTile: Tile = new Tile('Users', 'Manage Quantum Users', 'users');
     const authCodesTile: Tile = new Tile('Auth Codes', 'View and create Auth Codes', 'auth-codes');
-    const ordersTile: Tile = new Tile('orders', 'View and find orders', 'orders');
+    const ordersTile: Tile = new Tile('Orders', 'View and find orders', 'orders');
     const partsTile: Tile = new Tile('Parts', 'Manage Parts', 'parts');
 
     this.tiles = [customersTile, appsTile, usersTile, authCodesTile, ordersTile, partsTile];
