@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import 'hammerjs';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
@@ -7,14 +8,18 @@ import { MaterialModule, MdSidenavModule, MdToolbarModule, MdIconModule, MdButto
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { AppComponent } from './app.component';
+import { routes } from './app.route';
+import { AppComponent, DashboardComponent } from './components';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
+    RouterModule.forRoot(routes),
     FormsModule,
     HttpModule,
     MaterialModule,
