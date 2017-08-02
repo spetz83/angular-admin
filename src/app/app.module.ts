@@ -10,6 +10,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { routes } from './app.route';
 import { AppComponent, DashboardComponent, CustomersComponent, AppsComponent, UsersComponent, AuthCodesComponent, OrdersComponent, PartsComponent } from './components';
+import { UserAddUpdateComponent } from './components/users/forms/user-add-update/user-add-update.component';
+import { RolesComponent } from './components/users/roles/roles.component';
+import { RoleAddUpdateComponent } from './components/users/forms/role-add-update/role-add-update.component';
 
 
 
@@ -22,7 +25,10 @@ import { AppComponent, DashboardComponent, CustomersComponent, AppsComponent, Us
     UsersComponent,
     AuthCodesComponent,
     OrdersComponent,
-    PartsComponent
+    PartsComponent,
+    UserAddUpdateComponent,
+    RolesComponent,
+    RoleAddUpdateComponent
   ],
   imports: [
     BrowserModule,
