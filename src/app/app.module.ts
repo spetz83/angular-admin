@@ -13,6 +13,7 @@ import { AppComponent, DashboardComponent, CustomersComponent, AppsComponent, Us
 import { UserAddUpdateComponent } from './components/users/forms/user-add-update/user-add-update.component';
 import { RolesComponent } from './components/users/roles/roles.component';
 import { RoleAddUpdateComponent } from './components/users/forms/role-add-update/role-add-update.component';
+import { TileService } from './services/tile.service';
 
 
 
@@ -44,7 +45,9 @@ import { RoleAddUpdateComponent } from './components/users/forms/role-add-update
     MdButtonModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [
+    TileService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

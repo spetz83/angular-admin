@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Tile } from '../../models/tile';
 import { Router } from '@angular/router';
+import { TileService } from '../../services/tile.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -11,19 +12,12 @@ export class DashboardComponent implements OnInit {
   tiles: Tile[];
   router: Router;
 
-  constructor(_router: Router) {
-    const customersTile: Tile = new Tile('Customers', 'Manage Customers', 'customers');
-    const appsTile: Tile = new Tile('Apps', 'Manage Apps', 'apps');
-    const usersTile: Tile = new Tile('Users', 'Manage Quantum Users', 'users');
-    const authCodesTile: Tile = new Tile('Auth Codes', 'View and create Auth Codes', 'auth-codes');
-    const ordersTile: Tile = new Tile('Orders', 'View and find orders', 'orders');
-    const partsTile: Tile = new Tile('Parts', 'Manage Parts', 'parts');
-
-    this.tiles = [customersTile, appsTile, usersTile, authCodesTile, ordersTile, partsTile];
+  constructor(private tileService: TileService, _router: Router) {
     this.router = _router;
   }
 
   ngOnInit() {
+    this.tiles = this.tileService.getTiles();
   }
 
   navigate(tile: Tile) {

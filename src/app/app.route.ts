@@ -30,10 +30,10 @@ export const routes: Routes = [
   },
   {
     path: 'orders',
-    component: CustomersComponent
+    component: OrdersComponent
   },
   {
     path: 'parts',
-    component: CustomersComponent
+    component: PartsComponent
   }
 ];
